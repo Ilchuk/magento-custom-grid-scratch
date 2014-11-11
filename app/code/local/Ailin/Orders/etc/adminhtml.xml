@@ -1,0 +1,14 @@
+<?xml version ="1.0" ?>
+ <config>
+    <menu>
+        <sales>
+            <children>
+                <ailin_orders translate ="title" module ="ailin_orders">
+                    <sort_order>12</sort_order>
+                    <title>ailin_orders</title>
+                    <action>adminhtml/order</action>
+                </ailin_orders>
+            </children>
+        </sales>
+    </menu>
+ </config>

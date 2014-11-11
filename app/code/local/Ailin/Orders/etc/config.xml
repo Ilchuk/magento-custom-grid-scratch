@@ -1,0 +1,47 @@
+<?xml version = "1.0" ?>
+ <config>
+    <modules>
+        <Ailin_Orders>
+            <version>0.0.1</version>
+        </Ailin_Orders>
+    </modules>
+    <global>
+        <models>
+            <ailin_orders>
+                <class>Ailin_Orders_Model</class>
+                <resourceModel>ailin_orders_resource</resourceModel>
+            </ailin_orders>
+        </models>
+
+        <resources>
+            <ailin_orders_setup>
+                <setup>
+                    <module>Ailin_Orders</module>
+                </setup>
+            </ailin_orders_setup>
+        </resources>
+
+        <blocks>
+            <ailin_orders>
+                <class>Ailin_Orders_Block</class>
+            </ailin_orders>
+        </blocks>
+        <helpers>
+            <ailin_orders>
+                <class>Ailin_Orders_Helper</class>
+            </ailin_orders>
+        </helpers>
+     </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <ailin_orders before ="Mage_Adminhtml">Ailin_Orders_Adminhtml</ailin_orders>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+ </config>
